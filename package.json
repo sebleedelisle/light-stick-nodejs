@@ -1,0 +1,14 @@
+{
+  "name": "light-stick-comms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seb Lee-Delisle",
+  "license": "ISC",
+  "dependencies": {
+    "serialport": "^9.2.1"
+  }
+}
