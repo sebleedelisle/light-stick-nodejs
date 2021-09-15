@@ -66,7 +66,7 @@ export default class TcpSocketServer extends EventEmitter{
     }
     
     broadcast(data) { 
-        Utils.logNotice("TcpSocketServer.broadcast", data); 
+        Utils.logNotice("TcpSocketServer.broadcast", data.toString()); 
         for(let client of this.clients) { 
             client.write(data);//+Utils.delimiter); 
         }

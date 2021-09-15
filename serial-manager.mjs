@@ -35,9 +35,10 @@ export default class SerialManager extends EventEmitter{
 
   checkForNewSerialDevices() { 
 
+    // TODO - potentially check for missing devices on sticks already attached ?
+
     SerialPort.list().then((result) => {
 
-      //Utils.logNotice("RESULT : ", result);
       // result is an array of port data objects such as : 
       // {
       //   path: '/dev/tty.usbmodem11201',
