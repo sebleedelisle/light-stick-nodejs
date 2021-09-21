@@ -139,8 +139,11 @@ export default class SerialManager extends EventEmitter{
     return false; 
   }
 
-  sendToSerial(message) {
-    
+  broadcast(message) {
+    for(let lightstick of this.lightSticks) { 
+      lightstick.send(message); 
+
+    }
     
   }
 

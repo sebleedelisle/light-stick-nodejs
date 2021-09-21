@@ -41,8 +41,13 @@ export default class LightStick extends EventEmitter {
           });
 
 
-
-
+    }
+    send(message) { 
+      Utils.logNotice("LightStick.send(message) : ", message);
+      //if(this.serialPort.isOpen()) { 
+        this.serialPort.write(message);
+        Utils.logNotice("    - sending to serialPort ", this.portName); 
+      //}
     }
 
 
